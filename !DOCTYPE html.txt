@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .product h3 {
+      margin: 5px 0;
+    }
+    .price {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    .product p {
+      flex-grow: 1;
+      font-size: 14px;
+    }
+    .buy-btn {
+      display: inline-block;
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .buy-btn:hover {
+      background: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Handmade Products</h1>
+    <p>New designs added regularly</p>
+  </header>
+
+  <div class="container">
+    <div class="products">
+
+      <!-- PRODUCT TEMPLATE: copy this block to add new products -->
+      <div class="product">
+        <img src="images/pink-cape-coat.jpg" alt="Pink Cape Coat">
+        <h3>Cape Coat</h3>
+        <div class="price">Price: ...</div>
+        <p>Pink cape coat for teenagers.</p>
+        <a href="mailto:youremail@example.com" class="buy-btn">Order / Contact</a>
+      </div>
+      <!-- END PRODUCT -->
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Your Brand Name
+  </footer>
+
+</body>
+</html>
