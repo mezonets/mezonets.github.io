@@ -1,144 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MEZONET</title>
+  <title>مزونت | مزون تخصصی کت، شال و کیپ کت</title>
   <style>
+    /* فونت فارسی (از گوگل فونت‌ها) */
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&family=Lalezar&display=swap');
+    
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Vazirmatn', Arial, sans-serif;
       margin: 0;
       padding: 0;
       background: #fafafa;
       color: #333;
+      text-align: right;
     }
+    
     header {
-      background: #333;
+      background: linear-gradient(135deg, #2c3e50, #4a235a);
       color: #fff;
-      padding: 20px;
+      padding: 25px 20px;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+    
+    header h1 {
+      font-family: 'Lalezar', cursive;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    
     .container {
       max-width: 1000px;
-      margin: 30px auto;
+      margin: 40px auto;
       padding: 0 20px;
     }
+    
+    .intro {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-right: 5px solid #c4248a;
+    }
+    
+    .intro h2 {
+      color: #2c3e50;
+      margin-top: 0;
+      font-family: 'Lalezar', cursive;
+    }
+    
+    .intro ul {
+      list-style-type: none;
+      padding-right: 0;
+    }
+    
+    .intro li {
+      margin-bottom: 10px;
+      padding-right: 10px;
+      position: relative;
+    }
+    
+    .intro li:before {
+      content: "•";
+      color: #c4248a;
+      font-size: 1.5rem;
+      position: absolute;
+      right: -15px;
+      top: -5px;
+    }
+    
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
+    
     .product {
       background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
       display: flex;
       flex-direction: column;
+      transition: transform 0.3s ease;
+      border: 1px solid #eee;
     }
+    
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    
     .product img {
       width: 100%;
       height: 300px;
       object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #eee;
     }
+    
     .product h3 {
       margin: 5px 0;
+      color: #2c3e50;
+      font-size: 1.4rem;
     }
+    
     .price {
       font-weight: bold;
-      margin: 5px 0;
+      color: #c4248a;
+      font-size: 1.2rem;
+      margin: 10px 0;
+      font-family: 'Lalezar', cursive;
     }
+    
     .product p {
       flex-grow: 1;
-      font-size: 14px;
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
     }
+    
     .buy-btn {
       display: inline-block;
       text-align: center;
-      background: #222;
+      background: #2c3e50;
       color: #fff;
-      padding: 10px;
+      padding: 12px;
       text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
+      border-radius: 8px;
+      margin-top: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease;
     }
+    
     .buy-btn:hover {
       background: #c4248a;
+      transform: scale(1.03);
     }
+    
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
+      padding: 25px;
+      font-size: 0.95rem;
       color: #5E5E8F;
+      margin-top: 50px;
+      background: #f5f5f5;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <h1> مزونت | مزون تخصصی کت، شال و کیپ کت | فروشگاه آنلاین  </h1>
-<p> 
-    انواع شال، کت و کیپ کت‌ شیک با طراحی زیبا و دوخت حرفه‌ای
-</p>
+    <h1>مزونت | مزون تخصصی کت، شال و کیپ کت</h1>
+    <p>انواع شال، کت و کیپ کت‌های شیک با طراحی زیبا و دوخت حرفه‌ای</p>
   </header>
 
-  <div class="container" text-align: center;>
-        <p> 
-       به مزونت ما خوش آمدید ✨
-        </p>
-    <p>
-• طراحی و دوخت کت زنانه
-• کیپ کت شیک و مجلسی
-• شال و دستمال گردن
-• با پارچه‌های لطیف و باکیفیت
-• امکان خرید آنلاین و ارسال سریع
-        </p>
+  <div class="container">
+    <div class="intro">
+      <h2>به مزونت ما خوش آمدید ✨</h2>
+      <ul>
+        <li>طراحی و دوخت کت زنانه</li>
+        <li>کیپ کت شیک و مجلسی</li>
+        <li>شال و دستمال گردن</li>
+        <li>با پارچه‌های لطیف و باکیفیت</li>
+        <li>امکان خرید آنلاین و ارسال سریع</li>
+      </ul>
+    </div>
+    
     <div class="products">
-
-      <!-- PRODUCT TEMPLATE: copy this block to add new products -->
+      <!-- محصول 1 -->
       <div class="product">
-        <img src="images/img1.jpg" alt="Pink Cape Coat">
-        <h3>کیپ کت</h3>
-        <div class="price">Price: 3,000,000 تومان</div>
-        <p>کیپ کت صورتی</p>
-        <a href="mailto:ziba.daily@gmail.com" class="buy-btn">سفارش</a>
+        <img src="images/img1.jpg" alt="کیپ کت صورتی">
+        <h3>کیپ کت صورتی</h3>
+        <div class="price">قیمت: ۳,۰۰۰,۰۰۰ تومان</div>
+        <p>کیپ کت صورتی شیک با دوخت حرفه‌ای - مناسب مجالس و مهمانی‌های خاص</p>
+        <a href="mailto:ziba.daily@gmail.com" class="buy-btn">سفارش این محصول</a>
       </div>
-      <!-- END PRODUCT -->
-      <!-- PRODUCT TEMPLATE: copy this block to add new products -->
+      
+      <!-- محصول 2 -->
       <div class="product">
-        <img src="images/img2.jpg" alt="Pink Cape Coat">
-        <h3>کیپ کت</h3>
-        <div class="price">Price: 2,000,000 تومان</div>
-        <p>کیپ کت طوسی</p>
-        <a href="mailto:ziba.daily@gmail.com" class="buy-btn">سفارش</a>
+        <img src="images/img2.jpg" alt="کیپ کت طوسی">
+        <h3>کیپ کت طوسی</h3>
+        <div class="price">قیمت: ۲,۰۰۰,۰۰۰ تومان</div>
+        <p>کیپ کت طوسی کلاسیک - مناسب استفاده روزمره و محیط‌های اداری</p>
+        <a href="mailto:ziba.daily@gmail.com" class="buy-btn">سفارش این محصول</a>
       </div>
-      <!-- END PRODUCT -->
+      
+      <!-- محصول 3 (می‌توانید اضافه کنید) -->
+      <div class="product">
+        <img src="images/img3.jpg" alt="کت بژ">
+        <h3>کت بژ</h3>
+        <div class="price">قیمت: ۲,۵۰۰,۰۰۰ تومان</div>
+        <p>کت بژ مجلسی با طراحی مدرن - پارچه نخ نرم و ضد چروک</p>
+        <a href="mailto:ziba.daily@gmail.com" class="buy-btn">سفارش این محصول</a>
+      </div>
     </div>
   </div>
 
   <footer>
-    © 2025 Mezonet
+    © ۲۰۲۵ مزونت - تمامی حقوق محفوظ است
   </footer>
-
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
